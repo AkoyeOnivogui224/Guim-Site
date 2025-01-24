@@ -1,33 +1,23 @@
-<div class="header-wrapper">
-    <div class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <a href="index.html"><img src="{{ asset ('guim-site/assets/images/logo.png') }}" alt="" class="img-responsive"></a>
-                </div>
-                <div class="col-md-offset-1 col-md-7 col-sm-8 col-lg-offset-1 col-lg-7 hidden-xs">
-                    <div class="row">
-                        <div class="col-md-6 hidden-xs hidden-sm hidden-md col-lg-4"><span class="header-text"><i class="fa fa-map-marker"></i> <a href="#">Kaloum Almamya</a></span></div>
-                        <div class="col-md-6 hidden-xs col-sm-6 col-lg-4"><span class="header-text call-text"><i class="fa fa-phone"></i> +(224) 620624084</span></div>
-                        <div class="col-md-4 col-sm-6 col-lg-4 hidden-xs"><a href="{{ route('contact') }}" class="btn btn-default">Contactez-nous</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="bg-primary py-3 d-none d-sm-block text-white fw-bold">
+    <div class="container">
+      <div class="row align-items-center gx-4">
+        <div class="col-auto d-none d-lg-block fs--1"><span class="fas fa-map-marker-alt text-warning me-2" data-fa-transform="grow-3"></span>Immeuble Fria Base (Air France) 8 ème étage Almamya, Kaloum BP 2504 Conakry, Rep. de Guinée. </div>
+        <div class="col-auto ms-md-auto order-md-2 d-none d-sm-flex fs--1 align-items-center"><span class="fas fa-clock text-warning me-2" data-fa-transform="grow-3"></span>Lundi-Vendredi, 8.00-17.00. Dimanche FERMER</div>
+        <div class="col-auto"><span class="fas fa-phone-alt text-warning" data-fa-transform="shrink-3"></span><a class="ms-2 fs--1 d-inline text-white fw-bold" href="tel:2123865575">+224 613 007 070</a></div>
+      </div>
     </div>
-    <div class="navigation-wrapper">
-        <div class="container">
-            <div id="navigation">
-                <ul>
-                    <li class="active"><a href="{{ route('home') }}" title="Home">Accueil</a></li>
-                    <li><a href="{{ route('about') }}" title="About Us">Qui sommes nous ?</a></li>
-                    <li><a href="{{ route('service') }}" title="About Us">Services</a></li>
-                    <li><a href="{{ route('ressource') }}" title="About Us">Ressources</a></li>
-                    <li><a href="{{ route('contact') }}" title="About Us">Contact</a></li>
-
-                </ul>
-            </div>
+  </div>
+  <div class="sticky-top navbar-elixir">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg"> <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset ('guim-site/assets/img/logo-dark.png') }}" alt="logo" /></a><button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbarCollapse" aria-controls="primaryNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger hamburger--emphatic"><span class="hamburger-box"><span class="hamburger-inner"></span></span></span></button>
+        <div class="collapse navbar-collapse" id="primaryNavbarCollapse">
+          <ul class="navbar-nav py-3 py-lg-0 mt-1 mb-2 my-lg-0 ms-lg-n1">
+            <li class="nav-item dropdown"><a class="nav-link" href="{{ route('home') }}" role="button">Accueil</a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="{{ route('about') }}" role="button">Qui sommes nous ?</a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="{{ route('service') }}" role="button">Services</a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="{{ route('ressource') }}" role="button">Ressources</a></li>
+          </ul><a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0" href="{{ route('contact') }}">Contactez-nous</a>
         </div>
+      </nav>
     </div>
-
 </div>

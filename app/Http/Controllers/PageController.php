@@ -6,28 +6,23 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function home(){
-
-        return view('guim-site.pages.home');
+    public function index(){
+        return view('guim-site.pages.index');
     }
 
     public function about(){
-
         return view('guim-site.pages.about');
     }
 
     public function service(){
-
         return view('guim-site.pages.service');
     }
 
-    public function ressource(){
-
-        return view('guim-site.pages.ressource');
+    public function contact(){
+        return view('guim-site.pages.contact');
     }
 
-    public function contact(){
-
-        return view('guim-site.pages.contact');
+    public function ressource(){
+        return view('guim-site.pages.ressource');
     }
 }
